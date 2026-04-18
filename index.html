@@ -1,18 +1,66 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="container">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MyBasket</title>
 
-        <h1>
-            Welcome to my basket project
-        </h1>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- 🔹 Navbar -->
+  <nav class="bg-green-600 p-4 text-white flex justify-between">
+    <h1 class="text-xl font-bold">MyBasket</h1>
+    <div>
+      <input type="text" placeholder="Search..." class="px-2 py-1 rounded text-black">
+      <button class="ml-2 bg-white text-green-600 px-3 py-1 rounded">Cart 🛒</button>
     </div>
-    <script src="js/script.js"></script>
+  </nav>
+
+  <!-- 🔹 Hero Section -->
+  <section class="bg-green-100 text-center p-10">
+    <h2 class="text-3xl font-bold mb-4">Fresh Groceries Delivered</h2>
+    <p class="mb-4">Best quality products at your doorstep</p>
+    <button class="bg-green-600 text-white px-5 py-2 rounded">Shop Now</button>
+  </section>
+
+  <!-- 🔹 Categories -->
+  <section class="p-6">
+    <h2 class="text-2xl font-bold mb-4">Categories</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="card">Fruits</div>
+      <div class="card">Vegetables</div>
+      <div class="card">Dairy</div>
+      <div class="card">Snacks</div>
+    </div>
+  </section>
+
+  <!-- 🔹 Products -->
+  <section class="p-6">
+    <h2 class="text-2xl font-bold mb-4">Featured Products</h2>
+    <div id="product-list" class="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <!-- JS will load products -->
+    </div>
+  </section>
+
+  <!-- 🔹 Offers -->
+  <section class="bg-yellow-100 p-6 text-center">
+    <h2 class="text-xl font-bold">🔥 Special Offer</h2>
+    <p>Get 20% OFF on your first order</p>
+  </section>
+
+  <!-- 🔹 Footer -->
+  <footer class="bg-gray-800 text-white text-center p-4 mt-6">
+    <p>© 2026 MyBasket | All Rights Reserved</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
 </body>
 </html>
