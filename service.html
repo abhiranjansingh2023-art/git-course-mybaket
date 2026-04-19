@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>This is initial version of service page</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-100">
+
+<!-- 🔹 Navbar -->
+<nav class="bg-blue-600 text-white p-4 flex justify-between">
+  <h1 class="text-xl font-bold">MyApp Services</h1>
+  <a href="index.html" class="underline">Home</a>
+</nav>
+
+<!-- 🔹 Hero -->
+<section class="bg-blue-100 text-center p-10">
+  <h2 class="text-3xl font-bold mb-3">Our Services</h2>
+  <p>We provide high-quality services to make your life easier</p>
+</section>
+
+<!-- 🔹 Services Section -->
+<section class="p-6">
+  <div id="services" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+</section>
+
+<!-- 🔹 Booking Modal -->
+<div id="modal" class="modal hidden">
+  <div class="modal-content">
+    <h2 class="text-xl font-bold mb-3">Book Service</h2>
+
+    <input id="name" type="text" placeholder="Your Name" class="border p-2 w-full mb-2">
+    <input id="date" type="date" class="border p-2 w-full mb-2">
+
+    <button onclick="confirmBooking()" class="bg-blue-600 text-white px-4 py-2 rounded w-full">
+      Confirm
+    </button>
+
+    <button onclick="closeModal()" class="mt-2 text-red-500 w-full">
+      Cancel
+    </button>
+  </div>
+</div>
+
+<!-- 🔹 Footer -->
+<footer class="bg-gray-800 text-white text-center p-4 mt-6">
+  <p>© 2026 MyApp | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
