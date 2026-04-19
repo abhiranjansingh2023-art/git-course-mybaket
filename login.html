@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - MyApp</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+
+<!-- 🔹 Login Card -->
+<div class="bg-white p-8 rounded shadow w-full max-w-md">
+
+  <h2 class="text-2xl font-bold text-center mb-6">Login</h2>
+
+  <!-- Email -->
+  <input id="email" type="email" placeholder="Email"
+    class="input-field">
+
+  <!-- Password -->
+  <input id="password" type="password" placeholder="Password"
+    class="input-field">
+
+  <!-- Remember Me -->
+  <div class="flex justify-between items-center mb-4">
+    <label class="flex items-center">
+      <input type="checkbox" id="remember" class="mr-2">
+      Remember me
+    </label>
+    <a href="#" class="text-blue-600 text-sm">Forgot Password?</a>
+  </div>
+
+  <!-- Login Button -->
+  <button onclick="login()" class="btn-primary w-full">
+    Login
+  </button>
+
+  <!-- Divider -->
+  <div class="text-center my-4 text-gray-500">OR</div>
+
+  <!-- Google Login -->
+  <button class="btn-google w-full">
+    Login with Google
+  </button>
+
+  <!-- Signup -->
+  <p class="text-center mt-4 text-sm">
+    Don’t have an account?
+    <a href="#" class="text-blue-600">Sign up</a>
+  </p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
